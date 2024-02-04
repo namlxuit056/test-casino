@@ -3,7 +3,7 @@ import { Game, JackPot } from "../../types/game";
 export async function fetchGameList() {
   try {
     const response = await fetch(
-      "http://stage.whgstage.com/front-end-test/games.php"
+      "https://stage.whgstage.com/front-end-test/games.php"
     );
     if (!response.ok) {
       throw new Error("Failed to fetch categories");
@@ -19,7 +19,7 @@ export async function fetchGameList() {
 export async function fetchJackpotList() {
   try {
     const response = await fetch(
-      "http://stage.whgstage.com/front-end-test/jackpots.php"
+      "https://stage.whgstage.com/front-end-test/jackpots.php"
     );
     if (!response.ok) {
       throw new Error("Failed to fetch jackpot");
